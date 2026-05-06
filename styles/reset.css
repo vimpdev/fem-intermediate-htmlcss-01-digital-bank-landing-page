@@ -87,6 +87,7 @@
   a {
     /* Inherit text color (avoid default link blue) */
     color: inherit;
+    text-decoration: none;
   }
 
   :focus-visible {
