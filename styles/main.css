@@ -1,0 +1,131 @@
+@layer reset, fonts, tokens, base, layout, components, utilities, responsive, states;
+
+@import url('./reset.css') layer(reset);
+@import url('./fonts.css') layer(fonts);
+@import url('./tokens.css') layer(tokens);
+
+@layer base {
+
+  body {
+    font-family: var(--ff-base);
+    font-size: var(--fs-200);
+    font-weight: var(--fw-regular);
+    background-color: var(--clr-bg-default);
+    color: var(--clr-txt-primary);
+  }
+}
+
+@layer layout {
+
+  .container {
+    --max-size: 69.375rem;
+    --container-padding: var(--space-600);
+
+    inline-size: min(100% - var(--container-padding), var(--max-size));
+    margin-inline: auto;
+  }
+
+
+  /* HEADER */
+  .header {
+    position: relative;
+    padding-block: var(--space-300);
+    background-color: var(--clr-bg-default);
+    z-index: 20;
+  }
+
+  .header__inner {
+    --stack-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@layer components {
+
+  /* MENU OVERLAY */
+  .overlay {
+    position: fixed;
+    inset: 0;
+    background: var(--gradient-overlay);
+    z-index: 10;
+  }
+
+  .overlay[data-state="closed"] {
+    pointer-events: none;
+    opacity: 0;
+  }
+
+  .overlay[data-state="open"] {
+    pointer-events: auto;
+    opacity: 1;
+  }
+
+  /* MAIN MENU */
+  .primary-nav {
+    --max-size: 607px;
+    --top-position: calc(var(--space-1000) + var(--space-100));
+    --container-padding: var(--space-600);
+
+    inline-size: min(100% - var(--container-padding), var(--max-size));
+    padding-block: var(--space-400);
+    background-color: var(--clr-bg-default);
+    border-radius: 0.25rem;
+    z-index: 30;
+  }
+
+  .primary-nav[data-state="closed"] {
+    display: none;
+  }
+
+  .primary-nav[data-state="open"] {
+    position: fixed;
+    inset-block-start: var(--top-position);
+    inset-inline-start: 50%;
+    translate: -50% 0;
+  }
+
+  .primary-nav__list {
+    --stack-direction: column;
+    --stack-gap: var(--space-200);
+
+    align-items: center;
+    font-size: var(--fs-450);
+  }
+
+  /* BRAND */
+  .brand {
+    --max-size: 9.625rem;
+    max-inline-size: var(--max-size);
+  }
+
+  .brand--light {
+    --max-size: 9.5625rem;
+  }
+
+  /* TOGGLE MENU */
+  .toggle-menu {
+    inline-size: 2rem;
+    block-size: 2rem;
+    display: grid;
+    place-items: center;
+    background-color: transparent;
+    border-radius: 50%;
+
+    svg {
+      block-size: 100%;
+    }
+  }
+}
+
+@layer utilities {
+  .stack {
+    display: flex;
+    flex-direction: var(--stack-direction, column);
+    gap: var(--stack-gap, 1rem);
+  }
+}
+
+@layer responsive {}
+
+@layer states {}

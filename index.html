@@ -7,50 +7,54 @@
 
   <title>Digitalbank | VIMP</title>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon.png">
   <link rel="stylesheet" href="./styles/main.css">
+
+  <script src="./scripts/main.js" defer></script>
 </head>
 
 <body>
 
   <header class="header">
-    <div class="header__inner container">
+    <div class="header__inner container stack">
 
-      <a href="./" class="brand brand--dark">
+      <a href="./" class="brand">
         <img src="./assets/images/logos/brand-dark.svg" alt="Digitalbank home">
       </a>
 
-      <nav id="primary-navigation" class="menu menu--header" data-state="closed" aria-label="Main navigation">
-        <ul class="menu__list">
-          <li class="menu__item">
-            <a href="#" class="menu__link">Home</a>
-          </li>
-          <li class="menu__item">
-            <a href="#" class="menu__link">About</a>
-          </li>
-          <li class="menu__item">
-            <a href="#" class="menu__link">Contact</a>
-          </li>
-          <li class="menu__item">
-            <a href="#" class="menu__link">Blog</a>
-          </li>
-          <li class="menu__item">
-            <a href="#" class="menu__link">Careers</a>
-          </li>
-        </ul>
-      </nav>
-
-      <a href="#" class="cta" hidden>Request Invite</a>
-
-      <button class="toggle-menu" type="button" aria-controls="primary-navigation"
+      <button id="toggle-menu" class="toggle-menu" type="button" aria-controls="primary-navigation"
         aria-expanded="false" aria-label="Open menu">
         <svg class="toggle__icon" aria-hidden="true">
           <use href="./assets/images/icons/sprites/ui.svg#bars"></use>
         </svg>
       </button>
 
+      <nav id="primary-navigation" class="primary-nav" data-state="closed" aria-label="Main navigation">
+        <ul class="primary-nav__list stack">
+          <li class="primary-nav__item">
+            <a href="#" class="primary-nav__link">Home</a>
+          </li>
+          <li class="primary-nav__item">
+            <a href="#" class="primary-nav__link">About</a>
+          </li>
+          <li class="primary-nav__item">
+            <a href="#" class="primary-nav__link">Contact</a>
+          </li>
+          <li class="primary-nav__item">
+            <a href="#" class="primary-nav__link">Blog</a>
+          </li>
+          <li class="primary-nav__item">
+            <a href="#" class="primary-nav__link">Careers</a>
+          </li>
+        </ul>
+      </nav>
+
+      <a href="#" class="cta" hidden>Request Invite</a>
+
     </div>
   </header>
+
+  <div class="overlay" data-state="closed"></div>
 
   <main>
     <section class="hero">
