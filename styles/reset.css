@@ -1,0 +1,116 @@
+@layer reset {
+
+  html {
+    /* Establish a consistent box model */
+    box-sizing: border-box;
+
+    /* Prevent font size inflation on iOS */
+    -webkit-text-size-adjust: 100%;
+  }
+
+  *,
+  *::before,
+  *::after {
+    /* Inherit box-sizing for all elements */
+    box-sizing: inherit;
+  }
+
+  body {
+    /* Ensure full viewport height (fallback + dynamic viewport unit) */
+    min-block-size: 100vh;
+    min-block-size: 100dvh;
+
+    /* Improve base text readability */
+    line-height: 1.5;
+
+    /* Enhance font rendering on macOS and iOS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  :where(body,
+    h1, h2, h3, h4, h5, h6,
+    p,
+    ul, ol,
+    dl, dd,
+    figure,
+    blockquote) {
+    /* Remove default margins from common block elements */
+    margin: 0;
+  }
+
+  :where(ul, ol) {
+    /* Remove default list styles */
+    padding: 0;
+    list-style: none;
+  }
+
+  canvas,
+  img,
+  picture,
+  svg,
+  video {
+    /* Make media elements behave as block-level and responsive */
+    display: block;
+    max-inline-size: 100%;
+    block-size: auto;
+  }
+
+  button,
+  input,
+  select,
+  textarea {
+    /* Inherit typography and color from parent */
+    font: inherit;
+    color: inherit;
+  }
+
+  button {
+    /* Improve usability */
+    cursor: pointer;
+
+    /* Remove default border */
+    border: none;
+  }
+
+  fieldset {
+    /* Remove default spacing and border */
+    padding: 0;
+    border: 0;
+  }
+
+  legend {
+    /* Remove default padding */
+    padding: 0;
+  }
+
+  a {
+    /* Inherit text color (avoid default link blue) */
+    color: inherit;
+  }
+
+  :focus-visible {
+    /* Ensure accessible focus styles */
+    outline: 2px solid Highlight;
+    outline-offset: 3px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+      /* Disable animations and transitions for users who prefer reduced motion */
+      animation: none;
+      transition: none;
+      scroll-behavior: auto;
+    }
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      /* Enable smooth scrolling when motion is allowed */
+      scroll-behavior: smooth;
+    }
+  }
+}
