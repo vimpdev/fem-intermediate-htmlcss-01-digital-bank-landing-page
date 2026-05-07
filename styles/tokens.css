@@ -38,6 +38,7 @@
 
     --ff-base: 'Public Sans', sans-serif;
 
+    --fs-50: 0.625rem;
     --fs-100: 0.875rem;
     --fs-200: 1rem;
     --fs-300: clamp(0.875rem, .64rem + 1vw, 1rem);
