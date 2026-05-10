@@ -58,17 +58,16 @@
 
   .hero__inner {
     --gap: var(--space-600);
+    --media-row: 17.5rem;
 
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 280px 1fr;
+    grid-template-rows: var(--media-row) 1fr;
+    justify-items: center;
     gap: var(--gap);
   }
 
   .hero__media {
-    --inset-inline: -10vw;
-    --inset-block: 0;
-
     grid-row: 1/2;
     align-self: end;
 
@@ -78,8 +77,12 @@
   .hero__media::before {
     content: '';
     position: absolute;
-    inset-inline: var(--inset-inline);
-    inset-block: var(--inset-block);
+    inset-block: 0;
+    inset-inline-start: 50%;
+    inset-inline-end: 50%;
+
+    margin-left: -50vw;
+    margin-right: -50vw;
     background: url('./../assets/images/backgrounds/intro-mobile.svg') no-repeat;
     background-size: cover;
     background-position: center bottom;
@@ -101,8 +104,11 @@
     }
 
     p {
+      --padding-inline: var(--space-100);
+
+      padding-inline: var(--padding-inline);
       font-size: var(--fs-400);
-      letter-spacing: -0.0179em;
+      letter-spacing: -0.014em;
       line-height: 1.55;
       color: var(--clr-txt-secondary);
     }
@@ -136,7 +142,9 @@
 
   .features__overview {
     --stack-gap: var(--space-200);
+    --padding-inline: var(--space-0);
 
+    padding-inline: var(--padding-inline);
     text-align: center;
 
     h2 {
@@ -148,9 +156,10 @@
 
     p {
       font-size: var(--fs-400);
-      letter-spacing: -0.0179em;
+      letter-spacing: -0.014em;
       line-height: 1.55;
       color: var(--clr-txt-secondary);
+      ;
     }
   }
 
@@ -196,10 +205,10 @@
   /* ARTICLES */
   .articles {
     --padding-block: var(--space-800);
-    text-align: center;
 
     padding-block: var(--padding-block);
     background-color: var(--clr-bg-subtle);
+    text-align: center;
   }
 
   .articles__inner {
@@ -415,6 +424,55 @@
   }
 }
 
-@layer responsive {}
+@layer responsive {
+
+  @media (width >=48rem) {
+    .container {
+      --container-padding: calc(var(--space-1500) + var(--space-500));
+    }
+
+    .hero {
+      --padding-end: var(--space-900);
+    }
+
+    .hero__inner {
+      --media-row: 516px;
+    }
+
+    .hero__media::before {
+      background-image: url('./../assets/images/backgrounds/intro-desktop.svg');
+    }
+
+    .hero__content {
+      max-inline-size: 27.9375rem;
+    }
+
+    .features {
+      --padding-block: var(--space-1000);
+    }
+
+    .features__inner {
+      --stack-gap: var(--space-900);
+    }
+
+    .features__overview {
+      --stack-gap: var(--space-400);
+      --padding-inline: var(--space-400);
+    }
+
+    .features__list {
+      --columns: repeat(2, 1fr);
+      --gap: var(--space-800) var(--space-700);
+    }
+
+    .feature {
+      text-align: left;
+
+      svg {
+        margin-inline: unset;
+      }
+    }
+  }
+}
 
 @layer states {}
