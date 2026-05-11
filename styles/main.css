@@ -129,6 +129,10 @@
     line-height: 2;
   }
 
+  .header__cta {
+    display: none;
+  }
+
   /* FEATURES */
   .features {
     --padding-block: var(--space-800);
@@ -492,18 +496,23 @@
       --padding-block: var(--space-200);
     }
 
+    .header__cta {
+      display: inline-flex;
+    }
+
     .toggle-menu {
       display: none;
     }
 
     .primary-nav {
-      --max-width: 37.9375rem;
+      --max-width: none;
       --padding-block: var(--space-0);
-    }
 
-    .primary-nav[data-state="open"] {
-      position: unset;
-      translate: 0 0;
+      display: block;
+      position: static;
+      background-color: transparent;
+      border-radius: 0;
+      translate: none;
     }
 
     .primary-nav__list {
