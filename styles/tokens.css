@@ -3,7 +3,7 @@
   :root {
     --clr-white: #FFFFFF;
     --clr-black: #000000;
-    --clr-gray-600: #9597A5;
+    --clr-gray-600: #6d6f78;
     --clr-gray-100: #F4F5F7;
     --clr-gray-50: #FAFAFA;
     --clr-blue-950: #2D314D;
@@ -43,7 +43,7 @@
     --fs-200: 1rem;
     --fs-300: clamp(0.875rem, .64rem + 1vw, 1rem);
     --fs-400: clamp(0.875rem, .5rem + 1.6vw, 1.125rem);
-    --fs-450: 18px;
+    --fs-450: 1.125rem;
     --fs-500: 1.5rem;
     --fs-600: clamp(2rem, 1.25rem + 3.2vw, 2.5rem);
     --fs-700: clamp(2.5rem, 1.25rem + 5.3vw, 3.5rem);
