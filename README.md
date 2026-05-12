@@ -1,124 +1,174 @@
-# Frontend Mentor - Digitalbank landing page solution
+# 🚀 Digitalbank landing page
 
-This is a solution to the [Digitalbank landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/digital-bank-landing-page-WaUhkoDN). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+![HTML](https://img.shields.io/badge/HTML-5-E34F26?logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-3-1572B6?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-000000?logo=javascript&logoColor=F7DF1E)
+![Status](https://img.shields.io/badge/status-live-2ea44f)
 
-## Table of contents
+![](./docs/preview-github.png)
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-  - [AI Collaboration](#ai-collaboration)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
+Modern responsive landing page built with semantic HTML, scalable CSS architecture, accessibility-focused interactions, and vanilla JavaScript.
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+This is a solution to the [Digitalbank landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/digital-bank-landing-page-WaUhkoDN).
 
-## Overview
+---
 
-### The challenge
+## Links
 
-Users should be able to:
+- 🌎 [Live site](https://vimpdev.github.io/fem-intermediate-htmlcss-01-digital-bank-landing-page/)
+<!-- - 📌 [Frontend Mentor solution]() -->
 
-- View the optimal layout for the site depending on their device's screen size
-- See hover states for all interactive elements on the page
+---
 
-### Screenshot
+## 🎬 Demo
 
-![](./screenshot.jpg)
+![](./docs/demo.gif)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+---
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
+## 📸 Screenshots
 
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
+### 📱 Mobile
 
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+| ![](./docs/mobile-menu.avif) | ![](./docs/mobile-default.avif) |
+| --- | --- |
 
-### Links
+### 📲 Tablet
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+| ![](./docs/tablet-menu.avif) | ![](./docs/tablet-default.avif) |
+| --- | --- |
 
-## My process
+### 🖥️ Desktop
 
-### Built with
+#### Default
+| ![](./docs/desktop-hero.avif) | ![](./docs/desktop-features.avif) | ![](./docs/desktp-articles-footer.avif) |
+| --- | --- | --- |
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
+#### Hover states
+| ![](./docs/desktop-hover-up.avif) | ![](./docs/desktop-hover-down.avif) |
+| --- | --- |
+
+#### Focus Visible states
+| ![](./docs/desktop-focus-up.avif) | ![](./docs/desktop-focus-down.avif) |
+| --- | --- |
+
+---
+
+## ✨ Features
+
+- Responsive layouts for mobile, tablet, and desktop
+- Interactive mobile navigation menu
+- Accessible `hover` and `focus-visible` states
+- Semantic HTML structure
+- Scalable CSS architecture using `@layer`
+- Reusable utility classes
+- BEM-inspired naming convention
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- CSS Grid and Flexbox layouts
+- Optimized SVG backgrounds and assets
+- SEO and social sharing meta tags
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+---
 
-### What I learned
+## 🛠️ Built With
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+- Semantic HTML5
+- Modern CSS
+  - `@layer`
+  - CSS Custom Properties
+  - CSS Nesting
+  - Flexbox
+  - CSS Grid
+- Vanilla JavaScript
+- Mobile-first workflow
+- BEM-inspired class naming
 
-To see how you can add code snippets, see below:
+---
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
+## 🧠 What I Learned
 
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
+This project helped me strengthen my understanding of responsive layouts, CSS architecture, accessibility, and UI interactions.
 
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉');
-};
-```
+### CSS Architecture
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+I learned how to organize styles using:
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+- @layer
+- design tokens
+- utility classes
+- component separation
+- responsive layers
+- state layers
 
-### Continued development
+This made the stylesheet easier to scale and maintain.
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+### Responsive Layout Techniques
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+While building the hero section, I worked with:
 
-### Useful resources
+- complex CSS Grid layouts
+- overflowing images
+- full-viewport background techniques
+- responsive positioning
+- desktop image composition
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+I also learned the difference between controlling layout with:
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- `max-inline-size`
+- `inline-size`
+- `overflow`
+- transforms
+- absolute positioning
 
-### AI Collaboration
+### Accessibility
 
-Describe how you used AI tools (if any) during this project. This helps demonstrate your ability to work effectively with AI assistants.
+I implemented proper interactive states using:
 
-- What tools did you use (e.g., ChatGPT, Claude, GitHub Copilot)?
-- How did you use them (e.g., debugging, generating boilerplate, brainstorming solutions)?
-- What worked well? What didn't?
+- `:hover`
+- `:focus-visible`
+- accessible navigation attributes
+- keyboard-friendly interactions
 
-**Note: Delete this note and the content above if you didn't use AI, or replace with your own experience.**
+### JavaScript
 
-## Author
+I built the mobile navigation menu using vanilla JavaScript:
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- toggle menu logic
+- dynamic icon switching
+- `data-*` attributes
+- ARIA state updates
+- overlay interactions
+- automatic menu closing on navigation click
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+---
 
-## Acknowledgments
+## 🎯 Key Technical Decisions
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+- Used CSS custom properties for scalable spacing, typography, and colors
+- Used `@layer` to prevent style conflicts and improve maintainability
+- Used CSS nesting to reduce repetitive selectors
+- Avoided framework dependencies to strengthen core frontend skills
+- Built mobile-first before scaling to tablet and desktop
+- Separated layout, components, utilities, responsive rules, and states
 
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+---
+
+## 🤖 AI Collaboration
+
+AI tools were used during development to:
+
+- Debug responsive layout issues
+- Review CSS architecture decisions
+- Improve accessibility and interactive states
+- Refine component structure and naming
+- Better understand modern CSS features like `@layer` and nesting
+
+They were mainly useful for quick feedback, clarification, and iteration.
+
+---
+
+## 👩‍💻 Author
+
+- Frontend Mentor – [@vimpdev](https://www.frontendmentor.io/profile/vimpdev)
+
+---
