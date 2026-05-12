@@ -16,7 +16,7 @@ This is a solution to the [Digitalbank landing page challenge on Frontend Mentor
 ## Links
 
 - 🌎 [Live site](https://vimpdev.github.io/fem-intermediate-htmlcss-01-digital-bank-landing-page/)
-<!-- - 📌 [Frontend Mentor solution]() -->
+- 📌 [Frontend Mentor solution](https://www.frontendmentor.io/solutions/digitalbank-landing-page-modern-css-accessibility-and-responsive-ui-LrxD8U1-1z)
 
 ---
 
@@ -41,7 +41,7 @@ This is a solution to the [Digitalbank landing page challenge on Frontend Mentor
 ### 🖥️ Desktop
 
 #### Default
-| ![](./docs/desktop-hero.avif) | ![](./docs/desktop-features.avif) | ![](./docs/desktp-articles-footer.avif) |
+| ![](./docs/desktop-hero.avif) | ![](./docs/desktop-features.avif) | ![](./docs/desktop-articles-footer.avif) |
 | --- | --- | --- |
 
 #### Hover states
